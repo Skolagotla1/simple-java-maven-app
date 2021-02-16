@@ -4,6 +4,6 @@ stage('SCM Checkout'){
 }
 stage('Compile Package'){
   def mvn=tool name: 'Maven', type: 'maven'
-sh 'mvn package'
+sh "mvn package"
 }
 }
